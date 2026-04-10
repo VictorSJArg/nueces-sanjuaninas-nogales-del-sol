@@ -6,10 +6,10 @@ const Navbar = () => (
     <div className="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
       <span className="text-2xl font-headline font-bold text-stone-800">Nogales del Sol</span>
       <div className="hidden md:flex gap-8 items-center">
-        <a className="text-stone-600 font-medium hover:text-stone-900 transition-all duration-300" href="#story">Our Story</a>
-        <a className="text-stone-600 font-medium hover:text-stone-900 transition-all duration-300" href="#quality">The Orchard</a>
-        <a className="text-stone-900 border-b-2 border-stone-800 pb-1 font-medium" href="#products">Shop</a>
-        <a className="text-stone-600 font-medium hover:text-stone-900 transition-all duration-300" href="#benefits">Health Benefits</a>
+        <a className="text-stone-600 font-medium hover:text-stone-900 transition-all duration-300" href="#story">Nuestra Historia</a>
+        <a className="text-stone-600 font-medium hover:text-stone-900 transition-all duration-300" href="#quality">El Huerto</a>
+        <a className="text-stone-900 border-b-2 border-stone-800 pb-1 font-medium" href="#products">Comercio</a>
+        <a className="text-stone-600 font-medium hover:text-stone-900 transition-all duration-300" href="#benefits">Beneficios para la salud</a>
       </div>
       <div className="flex items-center gap-4">
         <a className="hidden md:block whatsapp-btn text-on-primary px-5 py-2 rounded-lg font-label font-semibold hover:opacity-90 transition-all active:scale-95" href="https://wa.me/5492645235017">WhatsApp</a>
@@ -225,6 +225,39 @@ const Products = () => (
   </section>
 );
 
+const HealthBenefits = () => (
+  <section className="py-24 bg-surface" id="benefits">
+    <div className="max-w-7xl mx-auto px-8">
+      <div className="text-center mb-16 space-y-4">
+        <h2 className="font-headline text-4xl font-bold">Beneficios para la Salud</h2>
+        <p className="text-on-surface-variant max-w-2xl mx-auto">La nuez es considerada un "superalimento" por su alta densidad nutricional.</p>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="p-6 border border-stone-100 rounded-xl space-y-3">
+          <div className="text-primary font-bold text-3xl">01</div>
+          <h4 className="font-bold text-lg">Salud Cardiovascular</h4>
+          <p className="text-sm text-on-surface-variant">Ricas en Omega-3, ayudan a reducir el colesterol malo y mejorar la elasticidad arterial.</p>
+        </div>
+        <div className="p-6 border border-stone-100 rounded-xl space-y-3">
+          <div className="text-primary font-bold text-3xl">02</div>
+          <h4 className="font-bold text-lg">Poder Antioxidante</h4>
+          <p className="text-sm text-on-surface-variant">Contienen polifenoles que combaten el daño oxidativo y el envejecimiento celular.</p>
+        </div>
+        <div className="p-6 border border-stone-100 rounded-xl space-y-3">
+          <div className="text-primary font-bold text-3xl">03</div>
+          <h4 className="font-bold text-lg">Función Cerebral</h4>
+          <p className="text-sm text-on-surface-variant">Sus nutrientes apoyan la memoria y la concentración, protegiendo contra el deterioro cognitivo.</p>
+        </div>
+        <div className="p-6 border border-stone-100 rounded-xl space-y-3">
+          <div className="text-primary font-bold text-3xl">04</div>
+          <h4 className="font-bold text-lg">Control de Peso</h4>
+          <p className="text-sm text-on-surface-variant">Gracias a su fibra y proteínas, generan saciedad y ayudan a regular el apetito.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+);
+
 const Testimonials = () => (
   <section className="py-24 bg-surface-container-high relative">
     <div className="max-w-7xl mx-auto px-8">
@@ -299,6 +332,7 @@ export default function App() {
         <WhyDifferent />
         <FairPrice />
         <Products />
+        <HealthBenefits />
         <Testimonials />
         <FinalCTA />
       </main>

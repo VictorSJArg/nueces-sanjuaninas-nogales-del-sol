@@ -12,7 +12,7 @@ const Navbar = () => (
         <a className="text-stone-600 font-medium hover:text-stone-900 transition-all duration-300" href="#benefits">Health Benefits</a>
       </div>
       <div className="flex items-center gap-4">
-        <a className="hidden md:block bg-primary text-on-primary px-5 py-2 rounded-lg font-label font-semibold hover:opacity-90 transition-all active:scale-95" href="https://wa.me/5492645235017">WhatsApp</a>
+        <a className="hidden md:block whatsapp-btn text-on-primary px-5 py-2 rounded-lg font-label font-semibold hover:opacity-90 transition-all active:scale-95" href="https://wa.me/5492645235017">WhatsApp</a>
         <ShoppingBag className="text-stone-700 cursor-pointer hover:opacity-80 transition-all w-6 h-6" />
       </div>
     </div>
@@ -30,7 +30,7 @@ const Hero = () => (
         <h1 className="font-headline text-5xl md:text-7xl text-on-surface editorial-text mb-6 font-bold leading-tight">Nueces Premium de San Juan</h1>
         <p className="text-xl md:text-2xl text-on-surface-variant mb-10 leading-relaxed">100% naturales, sin químicos, cosechadas artesanalmente y peladas a mano.</p>
         <div className="flex flex-col sm:flex-row gap-4">
-          <a className="satin-gradient text-on-primary text-center px-10 py-5 rounded-lg text-lg font-bold shadow-lg hover:opacity-90 transition-all active:scale-95" href="https://wa.me/5492645235017?text=Hola%20vi%20las%20nueces%20premium%20de%20Nogales%20del%20Sol%20y%20quiero%20info%20sobre%20precios%20y%20env%C3%ADos">Comprar Ahora</a>
+          <a className="whatsapp-btn text-on-primary text-center px-10 py-5 rounded-lg text-lg font-bold shadow-lg hover:opacity-90 transition-all active:scale-95" href="https://wa.me/5492645235017?text=Hola%20vi%20las%20nueces%20premium%20de%20Nogales%20del%20Sol%20y%20quiero%20info%20sobre%20precios%20y%20env%C3%ADos">Comprar Ahora</a>
         </div>
       </div>
     </div>
@@ -196,7 +196,7 @@ const Products = () => (
               </div>
               <span className="text-2xl font-bold text-primary">$18.000</span>
             </div>
-            <a className="flex items-center justify-center gap-3 w-full bg-primary text-on-primary py-4 rounded-lg font-bold hover:opacity-90 transition-all" href="https://wa.me/5492645235017?text=Hola%20quiero%20comprar%201kg%20de%20Nueces%20Premium">
+            <a className="flex items-center justify-center gap-3 w-full whatsapp-btn text-on-primary py-4 rounded-lg font-bold hover:opacity-95 transition-all" href="https://wa.me/5492645235017?text=Hola%20quiero%20comprar%201kg%20de%20Nueces%20Premium">
               <MessageCircle className="w-5 h-5" />
               Comprar por WhatsApp
             </a>
@@ -214,7 +214,7 @@ const Products = () => (
               </div>
               <span className="text-2xl font-bold text-primary">$9.900</span>
             </div>
-            <a className="flex items-center justify-center gap-3 w-full bg-primary text-on-primary py-4 rounded-lg font-bold hover:opacity-90 transition-all" href="https://wa.me/5492645235017?text=Hola%20quiero%20comprar%20500grs%20de%20Nueces%20Premium">
+            <a className="flex items-center justify-center gap-3 w-full whatsapp-btn text-on-primary py-4 rounded-lg font-bold hover:opacity-95 transition-all" href="https://wa.me/5492645235017?text=Hola%20quiero%20comprar%20500grs%20de%20Nueces%20Premium">
               <MessageCircle className="w-5 h-5" />
               Comprar por WhatsApp
             </a>
@@ -258,7 +258,7 @@ const FinalCTA = () => (
       <p className="text-2xl text-primary font-bold">Stock limitado - Cosecha de temporada</p>
       <p className="text-xl text-on-surface-variant">Llevamos el sabor de San Juan directamente a tu casa.</p>
       <div className="pt-6">
-        <a className="satin-gradient text-on-primary inline-block px-12 py-6 rounded-lg text-2xl font-bold shadow-2xl hover:scale-105 transition-transform active:scale-95" href="https://wa.me/5492645235017?text=Hola%20vi%20las%20nueces%20premium%20de%20Nogales%20del%20Sol%20y%20quiero%20info%20sobre%20precios%20y%20env%C3%ADos">Comprar Ahora</a>
+        <a className="whatsapp-btn text-on-primary inline-block px-12 py-6 rounded-lg text-2xl font-bold shadow-2xl hover:scale-105 transition-transform active:scale-95" href="https://wa.me/5492645235017?text=Hola%20vi%20las%20nueces%20premium%20de%20Nogales%20del%20Sol%20y%20quiero%20info%20sobre%20precios%20y%20env%C3%ADos">Comprar Ahora</a>
       </div>
     </div>
   </section>

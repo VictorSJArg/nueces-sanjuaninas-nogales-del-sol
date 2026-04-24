@@ -8,7 +8,7 @@ const Navbar = () => (
       <div className="hidden md:flex gap-8 items-center">
         <a className="text-stone-600 font-medium hover:text-stone-900 transition-all duration-300" href="#story">Nuestra Historia</a>
         <a className="text-stone-600 font-medium hover:text-stone-900 transition-all duration-300" href="#quality">El Huerto</a>
-        <a className="text-stone-900 border-b-2 border-stone-800 pb-1 font-medium" href="#products">Comercio</a>
+        <a className="text-stone-600 font-medium hover:text-stone-900 transition-all duration-300" href="#products">Comercio</a>
         <a className="text-stone-600 font-medium hover:text-stone-900 transition-all duration-300" href="#benefits">Beneficios para la salud</a>
       </div>
       <div className="flex items-center gap-4">
@@ -38,7 +38,7 @@ const Hero = () => (
 );
 
 const Story = () => (
-  <section className="py-24 bg-surface" id="story">
+  <section className="py-24 bg-surface scroll-mt-24" id="story">
     <div className="max-w-7xl mx-auto px-8">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
         <div className="relative order-2 lg:order-1">
@@ -68,7 +68,7 @@ const Story = () => (
 );
 
 const Quality = () => (
-  <section className="py-24 bg-surface-container-low" id="quality">
+  <section className="py-24 bg-surface-container-low scroll-mt-24" id="quality">
     <div className="max-w-7xl mx-auto px-8">
       <div className="text-center mb-16 space-y-4">
         <h2 className="font-headline text-4xl font-bold">Calidad de Exportación</h2>
@@ -177,7 +177,7 @@ const FairPrice = () => (
 );
 
 const Products = () => (
-  <section className="py-24 bg-surface" id="products">
+  <section className="py-24 bg-surface scroll-mt-24" id="products">
     <div className="max-w-7xl mx-auto px-8">
       <div className="text-center mb-20">
         <span className="text-primary font-bold uppercase tracking-widest text-sm">Nuestra Tienda</span>
@@ -194,7 +194,7 @@ const Products = () => (
                 <h3 className="font-headline text-2xl font-bold">Nueces Premium Peladas 1 Kg</h3>
                 <p className="text-on-surface-variant mt-2 italic">Ideal para familias y amantes de la cocina.</p>
               </div>
-              <span className="text-2xl font-bold text-primary">$18.000</span>
+              <span className="text-2xl font-bold text-primary">$19.900</span>
             </div>
             <a className="flex items-center justify-center gap-3 w-full whatsapp-btn text-on-primary py-4 rounded-lg font-bold hover:opacity-95 transition-all" href="https://wa.me/5492645235017?text=Hola%20quiero%20comprar%201kg%20de%20Nueces%20Premium">
               <MessageCircle className="w-5 h-5" />
@@ -212,7 +212,7 @@ const Products = () => (
                 <h3 className="font-headline text-2xl font-bold">Nueces Premium Peladas 500 grs</h3>
                 <p className="text-on-surface-variant mt-2 italic">La medida justa para tus snacks saludables.</p>
               </div>
-              <span className="text-2xl font-bold text-primary">$9.900</span>
+              <span className="text-2xl font-bold text-primary">$11.900</span>
             </div>
             <a className="flex items-center justify-center gap-3 w-full whatsapp-btn text-on-primary py-4 rounded-lg font-bold hover:opacity-95 transition-all" href="https://wa.me/5492645235017?text=Hola%20quiero%20comprar%20500grs%20de%20Nueces%20Premium">
               <MessageCircle className="w-5 h-5" />
@@ -226,7 +226,7 @@ const Products = () => (
 );
 
 const HealthBenefits = () => (
-  <section className="py-24 bg-surface" id="benefits">
+  <section className="py-24 bg-surface scroll-mt-24" id="benefits">
     <div className="max-w-7xl mx-auto px-8">
       <div className="text-center mb-16 space-y-4">
         <h2 className="font-headline text-4xl font-bold">Beneficios para la Salud</h2>

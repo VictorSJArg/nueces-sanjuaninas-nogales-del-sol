@@ -186,7 +186,7 @@ const Products = () => (
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
         <div className="bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
           <div className="aspect-square overflow-hidden">
-            <img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="1kg bag of premium walnuts" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_FbIXu2jppn4KkZGzV_ivWq2rldga4PUsoGNz5RERg2PKWhBJozPYUJFT7FV3g_Y9assff5jTziStJoU3eIbX8RNSkBHUF4HY8U_HAcXmYNaD4uNh7AAVAFXQZNA77Jz8nNDChbbkKFjv90ZTFdLeqNHLpLssQ_ARiqiZKigoVPzkElutJTgsZZEWUd81alTrLO6OuU9vveHllSu0RzL8ZGlB_APt5iV56LaEMO9ccmHJlwn2OMm3uMMDd9c5xv-ZLobzo-LTosXU" />
+            <img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="1kg bag of premium walnuts" src="/assets/nueces-presentacion.jpg" />
           </div>
           <div className="p-8 space-y-6">
             <div className="flex justify-between items-start">
@@ -204,7 +204,7 @@ const Products = () => (
         </div>
         <div className="bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
           <div className="aspect-square overflow-hidden">
-            <img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="500g bag of premium walnuts" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBG-q9q52Om6cX7L1I3lqnawx0OORow3XbfJv7FIF1vS-060B4fPnKHEITFqO6RFlxFL2GA_xwyqnGrrners5s9YEqyJDfuHkr_ndt56waUqS970rLeaRYd1BntMbjSFVNwpCDSTGwlb253yJGllCLk37OcnWT_WZ4dNyzjtg5dZz0WLLRvvM-IthOD9DhG-asFbIo_77Vr_oQoJGdDxhjsE-XqzP1jO3adMw7NNS23zKkhn3qUYrvtZa3ZdoBNstOwOS-NhJRv0Eni" />
+            <img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="500g bag of premium walnuts" src="/assets/nueces-presentacion.jpg" />
           </div>
           <div className="p-8 space-y-6">
             <div className="flex justify-between items-start">

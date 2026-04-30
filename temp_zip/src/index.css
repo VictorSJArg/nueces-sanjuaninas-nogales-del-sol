@@ -56,13 +56,6 @@
 }
 
 @layer utilities {
-  .whatsapp-btn {
-    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
-    box-shadow: 0 4px 14px 0 rgba(37, 211, 102, 0.39);
-  }
-  .whatsapp-btn:hover {
-    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
-  }
   .satin-gradient {
     background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-container) 100%);
   }
@@ -72,10 +65,6 @@
   .no-line {
     border: none !important;
   }
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 body {

@@ -1,18 +1,18 @@
-import React, { useState, useEffect } from 'react';
-import { ShoppingBag, Leaf, Sprout, Hand, Star, Package, CheckCircle2, MessageCircle, X } from 'lucide-react';
+import React from 'react';
+import { ShoppingBag, Leaf, Sprout, Hand, Star, Package, CheckCircle2, MessageCircle } from 'lucide-react';
 
 const Navbar = () => (
   <nav className="fixed top-0 w-full z-50 bg-white/85 backdrop-blur-md shadow-sm no-line">
     <div className="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
       <span className="text-2xl font-headline font-bold text-stone-800">Nogales del Sol</span>
       <div className="hidden md:flex gap-8 items-center">
-        <a className="text-stone-600 font-medium hover:text-stone-900 transition-all duration-300" href="#story">Nuestra Historia</a>
-        <a className="text-stone-600 font-medium hover:text-stone-900 transition-all duration-300" href="#quality">El Huerto</a>
-        <a className="text-stone-600 font-medium hover:text-stone-900 transition-all duration-300" href="#products">Comercio</a>
-        <a className="text-stone-600 font-medium hover:text-stone-900 transition-all duration-300" href="#benefits">Beneficios para la salud</a>
+        <a className="text-stone-600 font-medium hover:text-stone-900 transition-all duration-300" href="#story">Our Story</a>
+        <a className="text-stone-600 font-medium hover:text-stone-900 transition-all duration-300" href="#quality">The Orchard</a>
+        <a className="text-stone-900 border-b-2 border-stone-800 pb-1 font-medium" href="#products">Shop</a>
+        <a className="text-stone-600 font-medium hover:text-stone-900 transition-all duration-300" href="#benefits">Health Benefits</a>
       </div>
       <div className="flex items-center gap-4">
-        <a className="hidden md:block whatsapp-btn text-on-primary px-5 py-2 rounded-lg font-label font-semibold hover:opacity-90 transition-all active:scale-95" href="https://wa.me/5492645235017">WhatsApp</a>
+        <a className="hidden md:block bg-primary text-on-primary px-5 py-2 rounded-lg font-label font-semibold hover:opacity-90 transition-all active:scale-95" href="https://wa.me/5492645235017">WhatsApp</a>
         <ShoppingBag className="text-stone-700 cursor-pointer hover:opacity-80 transition-all w-6 h-6" />
       </div>
     </div>
@@ -30,7 +30,7 @@ const Hero = () => (
         <h1 className="font-headline text-5xl md:text-7xl text-on-surface editorial-text mb-6 font-bold leading-tight">Nueces Premium de San Juan</h1>
         <p className="text-xl md:text-2xl text-on-surface-variant mb-10 leading-relaxed">100% naturales, sin químicos, cosechadas artesanalmente y peladas a mano.</p>
         <div className="flex flex-col sm:flex-row gap-4">
-          <a className="whatsapp-btn text-on-primary text-center px-10 py-5 rounded-lg text-lg font-bold shadow-lg hover:opacity-90 transition-all active:scale-95" href="https://wa.me/5492645235017?text=Hola%20vi%20las%20nueces%20premium%20de%20Nogales%20del%20Sol%20y%20quiero%20info%20sobre%20precios%20y%20env%C3%ADos">Comprar Ahora</a>
+          <a className="satin-gradient text-on-primary text-center px-10 py-5 rounded-lg text-lg font-bold shadow-lg hover:opacity-90 transition-all active:scale-95" href="https://wa.me/5492645235017?text=Hola%20vi%20las%20nueces%20premium%20de%20Nogales%20del%20Sol%20y%20quiero%20info%20sobre%20precios%20y%20env%C3%ADos">Comprar Ahora</a>
         </div>
       </div>
     </div>
@@ -38,7 +38,7 @@ const Hero = () => (
 );
 
 const Story = () => (
-  <section className="py-24 bg-surface scroll-mt-24" id="story">
+  <section className="py-24 bg-surface" id="story">
     <div className="max-w-7xl mx-auto px-8">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
         <div className="relative order-2 lg:order-1">
@@ -68,7 +68,7 @@ const Story = () => (
 );
 
 const Quality = () => (
-  <section className="py-24 bg-surface-container-low scroll-mt-24" id="quality">
+  <section className="py-24 bg-surface-container-low" id="quality">
     <div className="max-w-7xl mx-auto px-8">
       <div className="text-center mb-16 space-y-4">
         <h2 className="font-headline text-4xl font-bold">Calidad de Exportación</h2>
@@ -177,7 +177,7 @@ const FairPrice = () => (
 );
 
 const Products = () => (
-  <section className="py-24 bg-surface scroll-mt-24" id="products">
+  <section className="py-24 bg-surface" id="products">
     <div className="max-w-7xl mx-auto px-8">
       <div className="text-center mb-20">
         <span className="text-primary font-bold uppercase tracking-widest text-sm">Nuestra Tienda</span>
@@ -186,7 +186,7 @@ const Products = () => (
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
         <div className="bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
           <div className="aspect-square overflow-hidden">
-            <img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="1kg bag of premium walnuts" src="/assets/nueces-presentacion.jpg" />
+            <img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="1kg bag of premium walnuts" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_FbIXu2jppn4KkZGzV_ivWq2rldga4PUsoGNz5RERg2PKWhBJozPYUJFT7FV3g_Y9assff5jTziStJoU3eIbX8RNSkBHUF4HY8U_HAcXmYNaD4uNh7AAVAFXQZNA77Jz8nNDChbbkKFjv90ZTFdLeqNHLpLssQ_ARiqiZKigoVPzkElutJTgsZZEWUd81alTrLO6OuU9vveHllSu0RzL8ZGlB_APt5iV56LaEMO9ccmHJlwn2OMm3uMMDd9c5xv-ZLobzo-LTosXU" />
           </div>
           <div className="p-8 space-y-6">
             <div className="flex justify-between items-start">
@@ -194,9 +194,9 @@ const Products = () => (
                 <h3 className="font-headline text-2xl font-bold">Nueces Premium Peladas 1 Kg</h3>
                 <p className="text-on-surface-variant mt-2 italic">Ideal para familias y amantes de la cocina.</p>
               </div>
-              <span className="text-2xl font-bold text-primary">$19.900</span>
+              <span className="text-2xl font-bold text-primary">$18.000</span>
             </div>
-            <a className="flex items-center justify-center gap-3 w-full whatsapp-btn text-on-primary py-4 rounded-lg font-bold hover:opacity-95 transition-all" href="https://wa.me/5492645235017?text=Hola%20quiero%20comprar%201kg%20de%20Nueces%20Premium">
+            <a className="flex items-center justify-center gap-3 w-full bg-primary text-on-primary py-4 rounded-lg font-bold hover:opacity-90 transition-all" href="https://wa.me/5492645235017?text=Hola%20quiero%20comprar%201kg%20de%20Nueces%20Premium">
               <MessageCircle className="w-5 h-5" />
               Comprar por WhatsApp
             </a>
@@ -204,7 +204,7 @@ const Products = () => (
         </div>
         <div className="bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
           <div className="aspect-square overflow-hidden">
-            <img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="500g bag of premium walnuts" src="/assets/nueces-presentacion.jpg" />
+            <img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="500g bag of premium walnuts" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBG-q9q52Om6cX7L1I3lqnawx0OORow3XbfJv7FIF1vS-060B4fPnKHEITFqO6RFlxFL2GA_xwyqnGrrners5s9YEqyJDfuHkr_ndt56waUqS970rLeaRYd1BntMbjSFVNwpCDSTGwlb253yJGllCLk37OcnWT_WZ4dNyzjtg5dZz0WLLRvvM-IthOD9DhG-asFbIo_77Vr_oQoJGdDxhjsE-XqzP1jO3adMw7NNS23zKkhn3qUYrvtZa3ZdoBNstOwOS-NhJRv0Eni" />
           </div>
           <div className="p-8 space-y-6">
             <div className="flex justify-between items-start">
@@ -212,46 +212,13 @@ const Products = () => (
                 <h3 className="font-headline text-2xl font-bold">Nueces Premium Peladas 500 grs</h3>
                 <p className="text-on-surface-variant mt-2 italic">La medida justa para tus snacks saludables.</p>
               </div>
-              <span className="text-2xl font-bold text-primary">$11.900</span>
+              <span className="text-2xl font-bold text-primary">$9.900</span>
             </div>
-            <a className="flex items-center justify-center gap-3 w-full whatsapp-btn text-on-primary py-4 rounded-lg font-bold hover:opacity-95 transition-all" href="https://wa.me/5492645235017?text=Hola%20quiero%20comprar%20500grs%20de%20Nueces%20Premium">
+            <a className="flex items-center justify-center gap-3 w-full bg-primary text-on-primary py-4 rounded-lg font-bold hover:opacity-90 transition-all" href="https://wa.me/5492645235017?text=Hola%20quiero%20comprar%20500grs%20de%20Nueces%20Premium">
               <MessageCircle className="w-5 h-5" />
               Comprar por WhatsApp
             </a>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-);
-
-const HealthBenefits = () => (
-  <section className="py-24 bg-surface scroll-mt-24" id="benefits">
-    <div className="max-w-7xl mx-auto px-8">
-      <div className="text-center mb-16 space-y-4">
-        <h2 className="font-headline text-4xl font-bold">Beneficios para la Salud</h2>
-        <p className="text-on-surface-variant max-w-2xl mx-auto">La nuez es considerada un "superalimento" por su alta densidad nutricional.</p>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div className="p-6 border border-stone-100 rounded-xl space-y-3">
-          <div className="text-primary font-bold text-3xl">01</div>
-          <h4 className="font-bold text-lg">Salud Cardiovascular</h4>
-          <p className="text-sm text-on-surface-variant">Ricas en Omega-3, ayudan a reducir el colesterol malo y mejorar la elasticidad arterial.</p>
-        </div>
-        <div className="p-6 border border-stone-100 rounded-xl space-y-3">
-          <div className="text-primary font-bold text-3xl">02</div>
-          <h4 className="font-bold text-lg">Poder Antioxidante</h4>
-          <p className="text-sm text-on-surface-variant">Contienen polifenoles que combaten el daño oxidativo y el envejecimiento celular.</p>
-        </div>
-        <div className="p-6 border border-stone-100 rounded-xl space-y-3">
-          <div className="text-primary font-bold text-3xl">03</div>
-          <h4 className="font-bold text-lg">Función Cerebral</h4>
-          <p className="text-sm text-on-surface-variant">Sus nutrientes apoyan la memoria y la concentración, protegiendo contra el deterioro cognitivo.</p>
-        </div>
-        <div className="p-6 border border-stone-100 rounded-xl space-y-3">
-          <div className="text-primary font-bold text-3xl">04</div>
-          <h4 className="font-bold text-lg">Control de Peso</h4>
-          <p className="text-sm text-on-surface-variant">Gracias a su fibra y proteínas, generan saciedad y ayudan a regular el apetito.</p>
         </div>
       </div>
     </div>
@@ -291,81 +258,26 @@ const FinalCTA = () => (
       <p className="text-2xl text-primary font-bold">Stock limitado - Cosecha de temporada</p>
       <p className="text-xl text-on-surface-variant">Llevamos el sabor de San Juan directamente a tu casa.</p>
       <div className="pt-6">
-        <a className="whatsapp-btn text-on-primary inline-block px-12 py-6 rounded-lg text-2xl font-bold shadow-2xl hover:scale-105 transition-transform active:scale-95" href="https://wa.me/5492645235017?text=Hola%20vi%20las%20nueces%20premium%20de%20Nogales%20del%20Sol%20y%20quiero%20info%20sobre%20precios%20y%20env%C3%ADos">Comprar Ahora</a>
+        <a className="satin-gradient text-on-primary inline-block px-12 py-6 rounded-lg text-2xl font-bold shadow-2xl hover:scale-105 transition-transform active:scale-95" href="https://wa.me/5492645235017?text=Hola%20vi%20las%20nueces%20premium%20de%20Nogales%20del%20Sol%20y%20quiero%20info%20sobre%20precios%20y%20env%C3%ADos">Comprar Ahora</a>
       </div>
     </div>
   </section>
 );
 
-const CookieBanner = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const consent = localStorage.getItem('cookieConsent');
-    if (!consent) {
-      setIsVisible(true);
-    }
-  }, []);
-
-  if (!isVisible) return null;
-
-  return (
-    <div className="fixed bottom-0 left-0 right-0 bg-stone-900 text-stone-100 p-4 z-[200] flex flex-col sm:flex-row justify-between items-center gap-4 shadow-[0_-4px_10px_rgba(0,0,0,0.1)]">
-      <p className="text-sm text-stone-300">
-        Utilizamos cookies y tecnologías similares para mejorar la experiencia, personalizar publicidad y analizar nuestro tráfico (Meta Ads). Al continuar navegando, consideramos que acepta su uso.
-      </p>
-      <button 
-        onClick={() => {
-          localStorage.setItem('cookieConsent', 'true');
-          setIsVisible(false);
-        }}
-        className="bg-primary text-on-primary px-6 py-2 rounded-lg font-bold whitespace-nowrap hover:bg-opacity-90 transition-all"
-      >
-        Aceptar
-      </button>
-    </div>
-  );
-};
-
-const Modal = ({ isOpen, onClose, title, children }: { isOpen: boolean, onClose: () => void, title: string, children: React.ReactNode }) => {
-  if (!isOpen) return null;
-  return (
-    <div className="fixed inset-0 z-[300] flex items-center justify-center p-4 bg-stone-900/50 backdrop-blur-sm" onClick={onClose}>
-      <div className="bg-surface text-on-surface w-full max-w-2xl max-h-[80vh] rounded-xl shadow-2xl flex flex-col overflow-hidden" onClick={e => e.stopPropagation()}>
-        <div className="p-6 border-b border-stone-200 flex justify-between items-center bg-surface-container-low">
-          <h2 className="font-headline text-2xl font-bold">{title}</h2>
-          <button onClick={onClose} className="p-2 hover:bg-stone-200 rounded-full transition-colors">
-            <X className="w-6 h-6" />
-          </button>
-        </div>
-        <div className="p-6 overflow-y-auto font-body text-on-surface-variant space-y-4">
-          {children}
-        </div>
-      </div>
-    </div>
-  );
-};
-
-const Footer = ({ onOpenPrivacy, onOpenTerms }: { onOpenPrivacy: () => void, onOpenTerms: () => void }) => (
+const Footer = () => (
   <footer className="bg-stone-900 text-stone-100 py-16 px-8 no-line">
-    <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-12">
-      <div className="space-y-4 text-center md:text-left flex-1">
+    <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
+      <div className="space-y-4 text-center md:text-left">
         <span className="text-3xl font-headline font-bold">Nogales del Sol</span>
-        <p className="text-stone-400 font-sans text-sm max-w-xs leading-relaxed mx-auto md:mx-0">Nueces Premium seleccionadas y peladas a mano en San Juan, Argentina.</p>
+        <p className="text-stone-400 font-sans text-sm max-w-xs leading-relaxed">Nueces Premium seleccionadas y peladas a mano en San Juan, Argentina.</p>
       </div>
-      <div className="flex-1 flex flex-col items-center md:items-start gap-2 text-stone-400 text-sm">
-        <h4 className="text-white font-bold mb-2">Contacto</h4>
-        <p>Email: contacto@nogalesdelsol.com</p>
-        <p>WhatsApp: +54 9 264 523-5017</p>
-        <p>Ubicación: San Juan, Argentina</p>
+      <div className="flex gap-8">
+        <a className="text-stone-400 hover:text-white transition-colors" href="#">Instagram</a>
+        <a className="text-stone-400 hover:text-white transition-colors" href="#">Facebook</a>
+        <a className="text-stone-400 hover:text-white transition-colors" href="#">Location</a>
+        <a className="text-stone-400 hover:text-white transition-colors" href="#">Contact Us</a>
       </div>
-      <div className="flex-1 flex flex-col items-center md:items-end gap-3">
-        <button onClick={onOpenPrivacy} className="text-stone-400 hover:text-white transition-colors text-sm">Política de Privacidad</button>
-        <button onClick={onOpenTerms} className="text-stone-400 hover:text-white transition-colors text-sm">Términos y Condiciones</button>
-      </div>
-    </div>
-    <div className="max-w-7xl mx-auto mt-12 pt-8 border-t border-stone-800 text-center">
-      <p className="text-stone-500 font-sans text-sm">© {new Date().getFullYear()} Nogales del Sol. Todos los derechos reservados.</p>
+      <p className="text-stone-400 font-sans text-sm">© 2024 Nogales del Sol. San Juan, Argentina.</p>
     </div>
   </footer>
 );
@@ -377,9 +289,6 @@ const WhatsAppFAB = () => (
 );
 
 export default function App() {
-  const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
-  const [isTermsOpen, setIsTermsOpen] = useState(false);
-
   return (
     <div className="bg-surface font-body text-on-surface overflow-x-hidden">
       <Navbar />
@@ -390,35 +299,11 @@ export default function App() {
         <WhyDifferent />
         <FairPrice />
         <Products />
-        <HealthBenefits />
         <Testimonials />
         <FinalCTA />
       </main>
-      <Footer onOpenPrivacy={() => setIsPrivacyOpen(true)} onOpenTerms={() => setIsTermsOpen(true)} />
+      <Footer />
       <WhatsAppFAB />
-      <CookieBanner />
-      
-      <Modal isOpen={isPrivacyOpen} onClose={() => setIsPrivacyOpen(false)} title="Política de Privacidad">
-        <h3 className="font-bold text-lg">1. Información que recopilamos</h3>
-        <p>Nogales del Sol puede recopilar información personal que usted nos proporciona directamente, como su nombre, dirección de correo electrónico y número de teléfono (por ejemplo, al contactarnos vía WhatsApp).</p>
-        <h3 className="font-bold text-lg mt-4">2. Uso de la información</h3>
-        <p>Utilizamos la información recopilada para responder a sus consultas, procesar pedidos y mejorar nuestros servicios. No vendemos ni compartimos su información con terceros, salvo lo necesario para procesar sus pedidos o cumplir con la ley.</p>
-        <h3 className="font-bold text-lg mt-4">3. Tecnologías de seguimiento (Cookies)</h3>
-        <p>Podemos utilizar cookies, píxeles (como el Píxel de Meta) y tecnologías similares para mejorar su experiencia, analizar el tráfico del sitio y mostrar anuncios relevantes. Usted puede configurar su navegador para rechazar las cookies.</p>
-        <h3 className="font-bold text-lg mt-4">4. Sus derechos</h3>
-        <p>Usted tiene derecho a solicitar el acceso, corrección o eliminación de sus datos personales. Para ejercer estos derechos, contáctenos en contacto@nogalesdelsol.com.</p>
-      </Modal>
-
-      <Modal isOpen={isTermsOpen} onClose={() => setIsTermsOpen(false)} title="Términos y Condiciones">
-        <h3 className="font-bold text-lg">1. Condiciones Generales</h3>
-        <p>Al acceder y realizar compras en Nogales del Sol, usted acepta estar sujeto a estos Términos y Condiciones. Los precios y productos están sujetos a disponibilidad y pueden cambiar sin previo aviso.</p>
-        <h3 className="font-bold text-lg mt-4">2. Envíos y Entregas</h3>
-        <p>Realizamos envíos coordinados directamente con el cliente. Los plazos de entrega son estimados y pueden variar. El riesgo de pérdida o daño del producto se transfiere a usted en el momento de la entrega.</p>
-        <h3 className="font-bold text-lg mt-4">3. Política de Devoluciones</h3>
-        <p>Debido a la naturaleza perecedera de nuestros productos, las devoluciones se analizarán caso por caso. Si su pedido llega en mal estado, por favor contáctenos inmediatamente a través de nuestros canales de atención.</p>
-        <h3 className="font-bold text-lg mt-4">4. Propiedad Intelectual</h3>
-        <p>Todo el contenido de este sitio web (textos, imágenes, logos) es propiedad de Nogales del Sol y está protegido por las leyes de propiedad intelectual.</p>
-      </Modal>
     </div>
   );
 }
